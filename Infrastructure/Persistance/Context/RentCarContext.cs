@@ -13,7 +13,7 @@ namespace Persistance.Context
         //Bağlantı adresi
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=LAPTOP-TKFJC4RO;initial Catalog=RentACarDB;integrated Security=true;");
+            optionsBuilder.UseSqlServer("Server=LAPTOP-TKFJC4RO;initial Catalog=RentACarDB;integrated Security=true;TrustServerCertificate=true;");
         }
 
         public DbSet<About> Abouts { get; set; }

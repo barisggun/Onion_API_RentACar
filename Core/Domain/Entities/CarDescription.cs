@@ -8,9 +8,10 @@ namespace Domain.Entities
 {
     public class CarDescription
     {
-        public int DescriptionID { get; set; }
+        public int CarDescriptionID { get; set; }
         public int CarID { get; set; }
         public Car Car { get; set; }
         public string Details { get; set; }
     }
-}
+} 
+ 

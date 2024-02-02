@@ -19,10 +19,10 @@ namespace Application.Features.CQRS.Handlers.CarHandlers
             _repository = repository;
         }
 
-        public async Task<List<GetCarWithBrandQueryResultXXX>> Handle()
+        public async Task<List<GetCarWithBrandQueryResult>> Handle()
         {
             var values = await _repository.GetAllAsync();
-            return values.Select(x => new GetCarWithBrandQueryResultXXX
+            return values.Select(x => new GetCarWithBrandQueryResult
             {
                 BrandID = x.BrandID,
                 BigImageUrl = x.BigImageUrl,

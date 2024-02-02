@@ -1,5 +1,4 @@
-﻿using Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Features.CQRS.Results.CarResults
 {
-    public class GetCarWithBrandQueryResultXXX
+    public class GetCarWithBrandQueryResult
     {
         public int CarID { get; set; }
         public int BrandID { get; set; }
@@ -20,6 +19,5 @@ namespace Application.Features.CQRS.Results.CarResults
         public byte Luggage { get; set; }
         public string Fuel { get; set; }
         public string BigImageUrl { get; set; }
-
     }
 }

@@ -15,7 +15,7 @@ namespace Persistance.Context
         {
             optionsBuilder.UseSqlServer("Server=LAPTOP-TKFJC4RO;initial Catalog=RentACarDB;integrated Security=true;TrustServerCertificate=true;");
         }
-
+        //SSH denemesi
         public DbSet<About> Abouts { get; set; }
         public DbSet<Banner> Banners { get; set; }
         public DbSet<Brand> Brands { get; set; }
